@@ -1,0 +1,11 @@
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\bin\Debug\RoomManager.exe
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\bin\Debug\RoomManager.pdb
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.btnQL.resources
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.Muon.resources
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.Properties.Resources.resources
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.QuanLy.resources
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.csproj.GenerateResource.Cache
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.exe
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.pdb
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.Tra.resources
