@@ -32,14 +32,13 @@
             this.btnM = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnT = new System.Windows.Forms.Button();
-            this.btnBH = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(91, 80);
+            this.button1.Location = new System.Drawing.Point(70, 80);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 58);
             this.button1.TabIndex = 1;
@@ -49,7 +48,7 @@
             // btnM
             // 
             this.btnM.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnM.Location = new System.Drawing.Point(91, 144);
+            this.btnM.Location = new System.Drawing.Point(70, 144);
             this.btnM.Name = "btnM";
             this.btnM.Size = new System.Drawing.Size(92, 58);
             this.btnM.TabIndex = 2;
@@ -60,7 +59,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(91, 272);
+            this.btnThoat.Location = new System.Drawing.Point(70, 208);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(181, 58);
             this.btnThoat.TabIndex = 3;
@@ -70,23 +69,13 @@
             // btnT
             // 
             this.btnT.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnT.Location = new System.Drawing.Point(189, 144);
+            this.btnT.Location = new System.Drawing.Point(162, 144);
             this.btnT.Name = "btnT";
             this.btnT.Size = new System.Drawing.Size(89, 58);
             this.btnT.TabIndex = 4;
             this.btnT.Text = "Trả";
             this.btnT.UseVisualStyleBackColor = true;
             this.btnT.Click += new System.EventHandler(this.btnT_Click);
-            // 
-            // btnBH
-            // 
-            this.btnBH.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnBH.Location = new System.Drawing.Point(91, 208);
-            this.btnBH.Name = "btnBH";
-            this.btnBH.Size = new System.Drawing.Size(181, 58);
-            this.btnBH.TabIndex = 5;
-            this.btnBH.Text = "Báo hỏng";
-            this.btnBH.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -97,7 +86,7 @@
             this.label1.Image = global::RoomManager.Properties.Resources._04;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 68);
+            this.label1.Size = new System.Drawing.Size(320, 68);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý phòng học";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,8 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(363, 358);
-            this.Controls.Add(this.btnBH);
+            this.ClientSize = new System.Drawing.Size(320, 280);
             this.Controls.Add(this.btnT);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnM);
@@ -127,7 +115,6 @@
         private System.Windows.Forms.Button btnM;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnT;
-        private System.Windows.Forms.Button btnBH;
     }
 }
 
