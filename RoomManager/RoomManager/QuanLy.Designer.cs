@@ -91,7 +91,7 @@
             // btnTK
             // 
             this.btnTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTK.Location = new System.Drawing.Point(552, 307);
+            this.btnTK.Location = new System.Drawing.Point(538, 307);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(49, 43);
             this.btnTK.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             // txtTK
             // 
-            this.txtTK.Location = new System.Drawing.Point(378, 330);
+            this.txtTK.Location = new System.Drawing.Point(364, 330);
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(168, 20);
             this.txtTK.TabIndex = 6;
@@ -108,7 +108,7 @@
             // cbbLoai
             // 
             this.cbbLoai.FormattingEnabled = true;
-            this.cbbLoai.Location = new System.Drawing.Point(378, 307);
+            this.cbbLoai.Location = new System.Drawing.Point(364, 307);
             this.cbbLoai.Name = "cbbLoai";
             this.cbbLoai.Size = new System.Drawing.Size(168, 21);
             this.cbbLoai.TabIndex = 7;

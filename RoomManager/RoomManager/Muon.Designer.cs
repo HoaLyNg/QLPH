@@ -42,6 +42,8 @@
             this.txtTen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbbLaplai = new System.Windows.Forms.ComboBox();
@@ -51,8 +53,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panelSV.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -204,6 +204,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thời gian";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(6, 58);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 19);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Ngày mượn";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 58);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(174, 26);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -289,23 +306,6 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Quay lại";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(90, 58);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(174, 26);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(6, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 19);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Ngày mượn";
             // 
             // Muon
             // 

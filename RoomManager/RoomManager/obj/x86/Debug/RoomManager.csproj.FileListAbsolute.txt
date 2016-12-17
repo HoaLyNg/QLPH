@@ -9,3 +9,4 @@ C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\
 C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.pdb
 C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.Tra.resources
+C:\Users\DELL\Documents\Visual Studio 2010\Projects\RoomManager\RoomManager\obj\x86\Debug\RoomManager.ThongBao.resources
