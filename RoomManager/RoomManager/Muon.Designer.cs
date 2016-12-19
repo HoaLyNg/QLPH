@@ -320,7 +320,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbbPhong);
             this.Name = "Muon";
-            this.Text = "Muon";
+            this.Text = "Mượn phòng";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panelSV.ResumeLayout(false);

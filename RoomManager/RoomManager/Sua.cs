@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace RoomManager
 {
-    public partial class QuanLy : Form
+    public partial class Sua : Form
     {
-        public QuanLy()
+        public Sua()
         {
             InitializeComponent();
-        }
-
-        private void QuanLy_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

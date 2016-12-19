@@ -1,6 +1,6 @@
 ﻿namespace RoomManager
 {
-    partial class Tra
+    partial class Sua
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbbPhong = new System.Windows.Forms.ComboBox();
+            this.btnQuaylai = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,12 +61,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.radMCHong = new System.Windows.Forms.RadioButton();
             this.radMCTot = new System.Windows.Forms.RadioButton();
-            this.txtTen = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtMSSV = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnQuaylai = new System.Windows.Forms.Button();
-            this.btnOK = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbbPhong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -88,28 +84,30 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // btnQuaylai
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(11, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Phòng";
+            this.btnQuaylai.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnQuaylai.Location = new System.Drawing.Point(181, 216);
+            this.btnQuaylai.Name = "btnQuaylai";
+            this.btnQuaylai.Size = new System.Drawing.Size(75, 30);
+            this.btnQuaylai.TabIndex = 17;
+            this.btnQuaylai.Text = "Quay lại";
+            this.btnQuaylai.UseVisualStyleBackColor = true;
             // 
-            // cbbPhong
+            // btnOK
             // 
-            this.cbbPhong.FormattingEnabled = true;
-            this.cbbPhong.Location = new System.Drawing.Point(64, 12);
-            this.cbbPhong.Name = "cbbPhong";
-            this.cbbPhong.Size = new System.Drawing.Size(121, 21);
-            this.cbbPhong.TabIndex = 2;
+            this.btnOK.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnOK.Location = new System.Drawing.Point(46, 216);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 30);
+            this.btnOK.TabIndex = 16;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.splitContainer1.Location = new System.Drawing.Point(15, 54);
+            this.splitContainer1.Location = new System.Drawing.Point(16, 53);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -129,7 +127,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Size = new System.Drawing.Size(282, 141);
             this.splitContainer1.SplitterDistance = 107;
-            this.splitContainer1.TabIndex = 4;
+            this.splitContainer1.TabIndex = 15;
             // 
             // label6
             // 
@@ -446,76 +444,36 @@
             this.radMCTot.Text = "Tốt";
             this.radMCTot.UseVisualStyleBackColor = true;
             // 
-            // txtTen
+            // label1
             // 
-            this.txtTen.Location = new System.Drawing.Point(64, 209);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(217, 20);
-            this.txtTen.TabIndex = 6;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(12, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Phòng";
             // 
-            // label7
+            // cbbPhong
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(12, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Tên";
+            this.cbbPhong.FormattingEnabled = true;
+            this.cbbPhong.Location = new System.Drawing.Point(65, 11);
+            this.cbbPhong.Name = "cbbPhong";
+            this.cbbPhong.Size = new System.Drawing.Size(121, 21);
+            this.cbbPhong.TabIndex = 13;
             // 
-            // txtMSSV
-            // 
-            this.txtMSSV.Location = new System.Drawing.Point(64, 235);
-            this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(121, 20);
-            this.txtMSSV.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(12, 236);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 17);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "MSSV";
-            // 
-            // btnQuaylai
-            // 
-            this.btnQuaylai.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnQuaylai.Location = new System.Drawing.Point(186, 261);
-            this.btnQuaylai.Name = "btnQuaylai";
-            this.btnQuaylai.Size = new System.Drawing.Size(75, 30);
-            this.btnQuaylai.TabIndex = 12;
-            this.btnQuaylai.Text = "Quay lại";
-            this.btnQuaylai.UseVisualStyleBackColor = true;
-            // 
-            // btnOK
-            // 
-            this.btnOK.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnOK.Location = new System.Drawing.Point(47, 261);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 30);
-            this.btnOK.TabIndex = 11;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            // 
-            // Tra
+            // Sua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 308);
+            this.ClientSize = new System.Drawing.Size(311, 264);
             this.Controls.Add(this.btnQuaylai);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.txtMSSV);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtTen);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbbPhong);
-            this.Name = "Tra";
-            this.Text = "Trả phòng";
+            this.Name = "Sua";
+            this.Text = "Sửa trạng thái";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -547,17 +505,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbPhong;
+        private System.Windows.Forms.Button btnQuaylai;
+        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
@@ -578,13 +533,12 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton radATHong;
         private System.Windows.Forms.RadioButton radATTot;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton radMCHong;
         private System.Windows.Forms.RadioButton radMCTot;
-        private System.Windows.Forms.TextBox txtTen;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtMSSV;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnQuaylai;
-        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbbPhong;
     }
 }
