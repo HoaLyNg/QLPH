@@ -32,6 +32,7 @@
             this.btnM = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnT = new System.Windows.Forms.Button();
+            this.btnPH = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -59,12 +60,13 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(70, 208);
+            this.btnThoat.Location = new System.Drawing.Point(70, 272);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(181, 58);
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnT
             // 
@@ -76,6 +78,16 @@
             this.btnT.Text = "Trả";
             this.btnT.UseVisualStyleBackColor = true;
             this.btnT.Click += new System.EventHandler(this.btnT_Click);
+            // 
+            // btnPH
+            // 
+            this.btnPH.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPH.Location = new System.Drawing.Point(70, 208);
+            this.btnPH.Name = "btnPH";
+            this.btnPH.Size = new System.Drawing.Size(181, 58);
+            this.btnPH.TabIndex = 5;
+            this.btnPH.Text = "Phòng hư";
+            this.btnPH.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -96,14 +108,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(320, 280);
+            this.ClientSize = new System.Drawing.Size(320, 342);
+            this.Controls.Add(this.btnPH);
             this.Controls.Add(this.btnT);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnM);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "btnQL";
-            this.Text = "Form1";
+            this.Text = "Quản lý phòng học";
             this.ResumeLayout(false);
 
         }
@@ -115,6 +128,7 @@
         private System.Windows.Forms.Button btnM;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnT;
+        private System.Windows.Forms.Button btnPH;
     }
 }
 

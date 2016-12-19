@@ -27,5 +27,10 @@ namespace RoomManager
             Tra t = new Tra();
             t.ShowDialog();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

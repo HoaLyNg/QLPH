@@ -82,7 +82,7 @@
             this.Controls.Add(this.dgvTKB);
             this.Controls.Add(this.lblTB);
             this.Name = "ThongBao";
-            this.Text = "ThongBao";
+            this.Text = "Thông báo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).EndInit();
             this.ResumeLayout(false);
 
