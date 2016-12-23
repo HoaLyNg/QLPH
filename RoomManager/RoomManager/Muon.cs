@@ -19,10 +19,12 @@ namespace RoomManager
         private void radSV_CheckedChanged(object sender, EventArgs e)
         {
             if (radSV.Checked == true)
-                panelSV.Enabled = true;
-            else if(radSV.Checked == false)
-                panelSV.Enabled = false;
+                lblH.Text = "MSSV";
+
+            else if (radSV.Checked == false)
+                lblH.Text = "MaGV";
         }
+
 
     }
 }

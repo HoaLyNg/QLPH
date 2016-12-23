@@ -45,6 +45,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Quản lý";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnM
             // 
@@ -88,6 +89,7 @@
             this.btnPH.TabIndex = 5;
             this.btnPH.Text = "Phòng hư";
             this.btnPH.UseVisualStyleBackColor = true;
+            this.btnPH.Click += new System.EventHandler(this.btnPH_Click);
             // 
             // label1
             // 

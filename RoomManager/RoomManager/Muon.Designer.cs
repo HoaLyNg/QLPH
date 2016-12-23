@@ -32,10 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelSV = new System.Windows.Forms.Panel();
-            this.txtDT = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtMSSV = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtMa = new System.Windows.Forms.TextBox();
+            this.lblH = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radSV = new System.Windows.Forms.RadioButton();
             this.radGV = new System.Windows.Forms.RadioButton();
@@ -66,7 +64,7 @@
             this.cbbPhong.Location = new System.Drawing.Point(65, 137);
             this.cbbPhong.Name = "cbbPhong";
             this.cbbPhong.Size = new System.Drawing.Size(121, 21);
-            this.cbbPhong.TabIndex = 0;
+            this.cbbPhong.TabIndex = 6;
             // 
             // label1
             // 
@@ -75,7 +73,7 @@
             this.label1.Location = new System.Drawing.Point(12, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 19);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Phòng";
             // 
             // groupBox1
@@ -87,56 +85,36 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 164);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 159);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.Size = new System.Drawing.Size(276, 133);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Người mượn";
             // 
             // panelSV
             // 
-            this.panelSV.Controls.Add(this.txtDT);
-            this.panelSV.Controls.Add(this.label4);
-            this.panelSV.Controls.Add(this.txtMSSV);
-            this.panelSV.Controls.Add(this.label3);
-            this.panelSV.Enabled = false;
+            this.panelSV.Controls.Add(this.txtMa);
+            this.panelSV.Controls.Add(this.lblH);
             this.panelSV.Location = new System.Drawing.Point(9, 90);
             this.panelSV.Name = "panelSV";
-            this.panelSV.Size = new System.Drawing.Size(261, 63);
+            this.panelSV.Size = new System.Drawing.Size(261, 35);
             this.panelSV.TabIndex = 6;
             // 
-            // txtDT
+            // txtMa
             // 
-            this.txtDT.Location = new System.Drawing.Point(81, 34);
-            this.txtDT.Name = "txtDT";
-            this.txtDT.Size = new System.Drawing.Size(165, 26);
-            this.txtDT.TabIndex = 10;
+            this.txtMa.Location = new System.Drawing.Point(81, 3);
+            this.txtMa.Name = "txtMa";
+            this.txtMa.Size = new System.Drawing.Size(165, 26);
+            this.txtMa.TabIndex = 0;
             // 
-            // label4
+            // lblH
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(7, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Điện Thoại";
-            // 
-            // txtMSSV
-            // 
-            this.txtMSSV.Location = new System.Drawing.Point(81, 3);
-            this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(165, 26);
-            this.txtMSSV.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(7, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "MSSV";
+            this.lblH.AutoSize = true;
+            this.lblH.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblH.Location = new System.Drawing.Point(7, 8);
+            this.lblH.Name = "lblH";
+            this.lblH.Size = new System.Drawing.Size(49, 17);
+            this.lblH.TabIndex = 7;
+            this.lblH.Text = "MaGV";
             // 
             // panel1
             // 
@@ -145,7 +123,7 @@
             this.panel1.Location = new System.Drawing.Point(43, 53);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 31);
-            this.panel1.TabIndex = 5;
+            this.panel1.TabIndex = 1;
             // 
             // radSV
             // 
@@ -165,7 +143,7 @@
             this.radGV.Location = new System.Drawing.Point(3, 3);
             this.radGV.Name = "radGV";
             this.radGV.Size = new System.Drawing.Size(90, 23);
-            this.radGV.TabIndex = 0;
+            this.radGV.TabIndex = 1;
             this.radGV.TabStop = true;
             this.radGV.Text = "Giảng viên";
             this.radGV.UseVisualStyleBackColor = true;
@@ -175,7 +153,7 @@
             this.txtTen.Location = new System.Drawing.Point(43, 21);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(212, 26);
-            this.txtTen.TabIndex = 4;
+            this.txtTen.TabIndex = 0;
             // 
             // label2
             // 
@@ -274,36 +252,36 @@
             this.txtLyDo.Multiline = true;
             this.txtLyDo.Name = "txtLyDo";
             this.txtLyDo.Size = new System.Drawing.Size(264, 67);
-            this.txtLyDo.TabIndex = 6;
+            this.txtLyDo.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtLyDo);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 329);
+            this.groupBox3.Location = new System.Drawing.Point(12, 303);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(276, 98);
-            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Lý do";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(41, 433);
+            this.button1.Location = new System.Drawing.Point(44, 407);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 2;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(180, 433);
+            this.button2.Location = new System.Drawing.Point(183, 407);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 30);
-            this.button2.TabIndex = 8;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Quay lại";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -311,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 477);
+            this.ClientSize = new System.Drawing.Size(295, 442);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
@@ -354,10 +332,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelSV;
-        private System.Windows.Forms.TextBox txtDT;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtMSSV;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtMa;
+        private System.Windows.Forms.Label lblH;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cbbLaplai;
         private System.Windows.Forms.Label label6;
