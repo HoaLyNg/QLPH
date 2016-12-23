@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvTKB = new System.Windows.Forms.DataGridView();
+            this.dgvPH = new System.Windows.Forms.DataGridView();
             this.btnQ = new System.Windows.Forms.Button();
             this.btnS = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPH)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvTKB
+            // dgvPH
             // 
-            this.dgvTKB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTKB.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvTKB.Location = new System.Drawing.Point(0, 0);
-            this.dgvTKB.Name = "dgvTKB";
-            this.dgvTKB.Size = new System.Drawing.Size(836, 283);
-            this.dgvTKB.TabIndex = 1;
+            this.dgvPH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPH.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgvPH.Location = new System.Drawing.Point(0, 0);
+            this.dgvPH.Name = "dgvPH";
+            this.dgvPH.Size = new System.Drawing.Size(836, 283);
+            this.dgvPH.TabIndex = 1;
             // 
             // btnQ
             // 
@@ -62,6 +62,7 @@
             this.btnS.TabIndex = 5;
             this.btnS.Text = "Sửa trạng thái";
             this.btnS.UseVisualStyleBackColor = true;
+            this.btnS.Click += new System.EventHandler(this.btnS_Click);
             // 
             // PhongHu
             // 
@@ -70,17 +71,18 @@
             this.ClientSize = new System.Drawing.Size(836, 342);
             this.Controls.Add(this.btnS);
             this.Controls.Add(this.btnQ);
-            this.Controls.Add(this.dgvTKB);
+            this.Controls.Add(this.dgvPH);
             this.Name = "PhongHu";
             this.Text = "Phòng hư";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTKB)).EndInit();
+            this.Load += new System.EventHandler(this.PhongHu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPH)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvTKB;
+        private System.Windows.Forms.DataGridView dgvPH;
         private System.Windows.Forms.Button btnQ;
         private System.Windows.Forms.Button btnS;
     }

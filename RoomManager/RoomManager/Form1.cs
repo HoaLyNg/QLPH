@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace RoomManager
 {
@@ -30,7 +31,19 @@ namespace RoomManager
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            QuanLy q = new QuanLy();
+            q.ShowDialog();
+        }
+
+        private void btnPH_Click(object sender, EventArgs e)
+        {
+            PhongHu p = new PhongHu();
+            p.ShowDialog();
+        }
+     
     }
 }

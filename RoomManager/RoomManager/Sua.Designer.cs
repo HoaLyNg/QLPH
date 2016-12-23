@@ -461,6 +461,7 @@
             this.cbbPhong.Name = "cbbPhong";
             this.cbbPhong.Size = new System.Drawing.Size(121, 21);
             this.cbbPhong.TabIndex = 13;
+            this.cbbPhong.SelectedIndexChanged += new System.EventHandler(this.cbbPhong_SelectedIndexChanged);
             // 
             // Sua
             // 
@@ -474,6 +475,7 @@
             this.Controls.Add(this.cbbPhong);
             this.Name = "Sua";
             this.Text = "Sửa trạng thái";
+            //this.Load += new System.EventHandler(this.Sua_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
