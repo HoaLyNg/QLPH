@@ -52,6 +52,7 @@
             this.btnQ.TabIndex = 4;
             this.btnQ.Text = "Quay lại";
             this.btnQ.UseVisualStyleBackColor = true;
+            this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
             // 
             // btnS
             // 

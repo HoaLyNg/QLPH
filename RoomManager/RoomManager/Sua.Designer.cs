@@ -93,6 +93,7 @@
             this.btnQuaylai.TabIndex = 17;
             this.btnQuaylai.Text = "Quay lại";
             this.btnQuaylai.UseVisualStyleBackColor = true;
+            this.btnQuaylai.Click += new System.EventHandler(this.btnQuaylai_Click);
             // 
             // btnOK
             // 
@@ -103,6 +104,7 @@
             this.btnOK.TabIndex = 16;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // splitContainer1
             // 
@@ -475,7 +477,7 @@
             this.Controls.Add(this.cbbPhong);
             this.Name = "Sua";
             this.Text = "Sửa trạng thái";
-            //this.Load += new System.EventHandler(this.Sua_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sua_FormClosing);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

@@ -31,6 +31,7 @@ namespace RoomManager
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,6 +44,12 @@ namespace RoomManager
         {
             PhongHu p = new PhongHu();
             p.ShowDialog();
+        }
+
+        private void btnQL_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn đóng chương trình ?", "Thoát", MessageBoxButtons.YesNo) == DialogResult.No)
+                e.Cancel = true;
         }
      
     }

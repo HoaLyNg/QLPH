@@ -119,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Name = "btnQL";
             this.Text = "Quản lý phòng học";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.btnQL_FormClosing);
             this.ResumeLayout(false);
 
         }

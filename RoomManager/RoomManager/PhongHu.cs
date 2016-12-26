@@ -59,6 +59,16 @@ namespace RoomManager
         
         private void PhongHu_Load(object sender, EventArgs e)
         {
+            GetData();
+        }
+
+        private void btnS_Click(object sender, EventArgs e)
+        {
+            Sua s = new Sua(this);
+            s.ShowDialog();
+        }
+        public void GetData()
+        {
             cn.Open();
             string sql = "select * from Phong";
             int p, sc;
@@ -87,13 +97,11 @@ namespace RoomManager
             dgvPH.DataSource = list;
             dr.Close();
             cn.Close();
-
         }
 
-        private void btnS_Click(object sender, EventArgs e)
+        private void btnQ_Click(object sender, EventArgs e)
         {
-            Sua s = new Sua();
-            s.ShowDialog();
+            this.Close();
         }
     }
 }

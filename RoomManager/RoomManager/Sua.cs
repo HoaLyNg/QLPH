@@ -24,9 +24,11 @@ namespace RoomManager
                 this.Value = v;
             }
         }
+        PhongHu FPhongHu;
         SqlConnection cn = new SqlConnection();
-        public Sua()
+        public Sua(PhongHu f)
         {
+            FPhongHu = f;
             InitializeComponent();
             try
             {
@@ -122,6 +124,35 @@ namespace RoomManager
                 dr1.Close();
             }
             cn.Close();
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            cbbItem cbb = (cbbItem)cbbPhong.SelectedItem;
+            int idroom = Convert.ToInt32(cbb.Value.ToString());
+            cn.Open();
+            SqlCommand cmd = new SqlCommand("QLPHRoomUpdate", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@IDPhong", idroom ));
+            cmd.Parameters.Add(new SqlParameter("@MC", (radMCTot.Checked == true)?true:false ));
+            cmd.Parameters.Add(new SqlParameter("@AT", (radATTot.Checked == true)?true:false ));
+            cmd.Parameters.Add(new SqlParameter("@AS",(radASTot.Checked == true)?true:false ));
+            cmd.Parameters.Add(new SqlParameter("@ML", (radMLTot.Checked == true)?true:false ));
+            cmd.Parameters.Add(new SqlParameter("@RO", (radRDCTot.Checked == true)?true:false ));
+            cmd.ExecuteNonQuery();
+            cn.Close();
+            if (MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                this.Close();
+        }
+      
+        private void btnQuaylai_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Sua_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FPhongHu.GetData();
         }
     }
 }
