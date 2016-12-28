@@ -127,7 +127,7 @@ namespace RoomManager
                 cmd.ExecuteNonQuery();
                 cmd = new SqlCommand("INS_TKB", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@maphong", cbbPhong.Text);
+                cmd.Parameters.Add("@maphong", cbbPhong.SelectedValue.ToString().Trim());
                 cmd.Parameters.Add("@bd", cbbTietBD.SelectedValue.ToString().Trim());
                 cmd.Parameters.Add("@kt", cbbTietKT.SelectedValue.ToString().Trim());
                 cmd.Parameters.Add("@date", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
