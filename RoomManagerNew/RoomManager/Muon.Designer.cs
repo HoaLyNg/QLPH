@@ -66,6 +66,7 @@
             this.cbbPhong.Size = new System.Drawing.Size(121, 21);
             this.cbbPhong.TabIndex = 6;
             this.cbbPhong.Text = "P001";
+            this.cbbPhong.MouseEnter += new System.EventHandler(this.cbbPhong_MouseEnter);
             // 
             // label1
             // 
@@ -229,8 +230,7 @@
             "3",
             "4",
             "5",
-            "6",
-            "7"});
+            "6"});
             this.cbbLaplai.Location = new System.Drawing.Point(59, 85);
             this.cbbLaplai.Name = "cbbLaplai";
             this.cbbLaplai.Size = new System.Drawing.Size(30, 27);
@@ -245,6 +245,7 @@
             this.cbbTietKT.Size = new System.Drawing.Size(115, 27);
             this.cbbTietKT.TabIndex = 8;
             this.cbbTietKT.Text = "Tiết kết thúc";
+            this.cbbTietKT.MouseEnter += new System.EventHandler(this.cbbTietKT_MouseEnter);
             // 
             // cbbTietBD
             // 
@@ -283,6 +284,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -293,6 +295,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Quay lại";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Muon
             // 
@@ -307,8 +310,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbbPhong);
             this.Name = "Muon";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mượn phòng";
+            this.Load += new System.EventHandler(this.Muon_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panelSV.ResumeLayout(false);
