@@ -42,14 +42,14 @@ namespace RoomManager
         public class PhongTrong
         {
             //
-            public int IDPhong { get; set; }
+            public string TenPhong { get; set; }
             public string TietTrong { get; set; }
             public DateTime Ngay { get; set; }
 
             //
-            public PhongTrong(int IDPhong, string TietTrong, DateTime NgayMuon)
+            public PhongTrong(string IDPhong, string TietTrong, DateTime NgayMuon)
             {
-                this.IDPhong = IDPhong;
+                this.TenPhong = IDPhong;
                 this.TietTrong = TietTrong;
                 this.Ngay = NgayMuon;
             }
@@ -127,19 +127,22 @@ namespace RoomManager
         private void btnPT_Click(object sender, EventArgs e)
         {
             cn.Open();
-            string sql = "select * from TKBieu";
+            string sql = "select TKB.* from TKBieu TKB";
             List<PhongTrong> list = new List<PhongTrong>();
             SqlCommand cmd = new SqlCommand(sql, cn);
             SqlDataReader dr = cmd.ExecuteReader();
             int IDPhong, TietBD, TietKT;
+            string TenPhong;
             DateTime Ngay;
             int[,] tiet = new int[10, 14];
+            string[] TenP = new string[10];
             while (dr.Read())
             {
                 IDPhong = dr.GetInt32(0);
                 TietBD = dr.GetInt32(2);
                 TietKT = dr.GetInt32(3);
                 Ngay = dr.GetDateTime(4);
+
                 if (Ngay.Date == Convert.ToDateTime(dtpPT.Text))
                 {
                     for (int i = TietBD; i <= TietKT; i++)
@@ -147,6 +150,16 @@ namespace RoomManager
                         tiet[IDPhong-1, i] = 1;
                     }
                 }
+            }
+            dr.Close();
+            sql = "select P.MaPhong, P.TenPhong from Phong P";
+            cmd = new SqlCommand(sql, cn);
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                IDPhong = dr.GetInt32(0);
+                TenPhong = dr.GetString(1);
+                TenP[IDPhong - 1] = TenPhong;
             }
             dr.Close();
             for (int i = 0; i < 10; i++)
@@ -161,7 +174,7 @@ namespace RoomManager
                }
                tt = tt.TrimEnd(' ');
                tt = tt.TrimEnd(',');
-               PhongTrong room = new PhongTrong(i+1, tt, Convert.ToDateTime(dtpPT.Text));
+               PhongTrong room = new PhongTrong(TenP[i], tt, Convert.ToDateTime(dtpPT.Text));
                list.Add(room);             
             }
             dgvTKB.DataSource = list;
